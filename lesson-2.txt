@@ -1,0 +1,12 @@
+1. Giải thích câu lệnh: 
+- git init: Khởi tạo folder
+- git add <file_name>: Thêm 1 file vào staging area 
+- git add .: Thêm toàn bộ file vào staging area 
+- git commit -m "msg": Commit 
+
+2. Liệt kê các file theo từng vùng sau khi chạy command: 
+b. git init: file1, file2, file3 ở working directory 
+c. git commit -m "init project": file1, file2, file3 ở repository 
+d. git add file1: file1 ở staging area 
+e. git commit -m "add file1": file1 ở staging area 
+f. git add file: file ở staging area 
