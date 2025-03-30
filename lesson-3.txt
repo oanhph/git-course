@@ -1,0 +1,85 @@
+Ex1: Giải thích các câu lệnh: 
+- git commit --amend: Thay đổi commit msg, có mở trình soạn thảo
+- git commit --amend -m "<msg>": Thay đổi commit msg, không mở trình soạn thảo
+- git restore --staged <file>: Đưa từ vùng staging về vùng working directory
+- git reset HEAD~1: Đưa từ vùng repository về working directory (uncommit)
+
+
+Ex2: 
+a. Tạo 3 files
+- Local: file1, file2, file3
+- Working directory: 
+- Staging: 
+- Repo:
+b. git init
+- Local: 
+- Working directory: file1, file2, file3
+- Staging: 
+- Repo:
+c. git commit -m "init project"
+- Local: 
+- Working directory: file1, file2, file3
+- Staging: 
+- Repo:
+-> Báo lỗi
+d. git add file1
+- Local: 
+- Working directory: file2, file3
+- Staging: file1
+- Repo:
+e. git commit -m "add file"
+- Local: 
+- Working directory: file2, file3
+- Staging: 
+- Repo: file1 
+f. git add .
+- Local: 
+- Working directory: 
+- Staging: file2, file3
+- Repo: file1
+g. git restore --staged file2
+- Local: 
+- Working directory: file2
+- Staging: file3
+- Repo: file1
+h. git commit -m "add all files"
+- Local: 
+- Working directory: file2
+- Staging:
+- Repo: file1, file3
+i. git reset HEAD~1
+- Local: 
+- Working directory: file2
+- Staging: file3
+- Repo: file1
+
+
+Ex3: 
+a. git init
+- Local: 
+- Working directory:
+- Staging: 
+- Repo: 
+- Ignore:
+b. Tạo file
+- Local: 
+- Working directory: file1.txt, file2.txt, oops/file3.txt
+- Staging: 
+- Repo: 
+- Ignore:
+c. Thêm file .gitignore
+- Local: 
+- Working directory: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- Staging:
+- Repo: 
+d. git add .
+- Local: 
+- Working directory: file1.txt, oops/file3.txt
+- Staging: file2.txt, .gitignore 
+- Repo: 
+- Ignore: 
+e. git commit -m "init project" 
+- Local: 
+- Working directory: file1.txt, oops/file3.txt
+- Staging:
+- Repo: file2.txt, .gitignore 
