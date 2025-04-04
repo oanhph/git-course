@@ -1,0 +1,33 @@
+Ex1. Giải thích câu lệnh: 
+- git commit --amend: Thay đổi commit msg 
+    - i: Vào chế độ insert 
+    - esc: Thoát insert 
+    - :wq: write & quit 
+-  git reset HEAD~3: Đưa 3 commit từ vùng repository về working directory (uncommit)
+
+Ex2.
+- branch: main 
+    - Các commit: 
+        - "init project"
+    - Các file theo từng vùng: 
+        - Working directory: file2, file3
+        - Staging: 
+        - Repository: file1
+
+- branch: feature-A
+    - Các commit: 
+        - "feat: add file2"
+        - "feat: add file3"
+    - Các file theo từng vùng: 
+        - Working directory: 
+        - Staging: 
+        - Repository: file1, file2, file3
+
+- branch: feature-B
+    - Các commit: 
+        - "feat: init project"
+    - Các file theo từng vùng: 
+        - Working directory: file2, file3
+        - Staging: 
+        - Repository: file1
+        
